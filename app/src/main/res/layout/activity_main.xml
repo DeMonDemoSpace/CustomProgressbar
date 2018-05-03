@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <com.demon.customprogressbar.widget.NumberProgressBar
+        android:id="@+id/numberProgressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android_custom:nTextColor="@android:color/white"
+        android_custom:nTextSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.demon.customprogressbar.widget.RingProgressBar
+            android:id="@+id/ringProgressBar1"
+            android:layout_width="120dp"
+            android:layout_height="120dp" />
+
+        <com.demon.customprogressbar.widget.RingProgressBar
+            android:id="@+id/ringProgressBar2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="50dp"
+            android_custom:rProgressColor="#0098fd"
+            android_custom:style="FILL" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <com.demon.customprogressbar.widget.RingProgressBar
+            android:id="@+id/ringProgressBar3"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android_custom:rCircleColor="@android:color/darker_gray"
+            android_custom:rProgressColor="@android:color/holo_blue_bright"
+            android_custom:rTextColor="@android:color/white"
+            android_custom:rTextSize="16sp" />
+
+        <com.demon.customprogressbar.widget.RingProgressBar
+            android:id="@+id/ringProgressBar4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="50dp"
+            android_custom:rTextIsVisibility="false" />
+
+    </LinearLayout>
+</LinearLayout>
